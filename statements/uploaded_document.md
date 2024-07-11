@@ -39,7 +39,7 @@ A user has uploaded a file of `document` type to an LMS or an e-learning platfor
       },
       "extensions": {
          "https://w3id.org/xapi/cmi5/context/extensions/sessionid": "53ff781a-3c52-11ee-be56-0242ac120002"
-      },
+      }
    },
    "timestamp": "2016-06-09T15:34:26.887Z"
 }

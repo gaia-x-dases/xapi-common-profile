@@ -2,7 +2,7 @@
 
 ## Description
 
-A user has accessed or navigated a page on a LMS or an e-learning platform.
+A user has accessed or navigated a page on an LMS or an e-learning platform.
 
 ## Example
 

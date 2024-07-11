@@ -2,7 +2,7 @@
 
 ## Description
 
-A user has accessed or navigated a file on a LMS or an e-learning platform.
+A user has accessed or navigated a file on an LMS or an e-learning platform.
 
 ## Example
 
@@ -39,7 +39,7 @@ A user has accessed or navigated a file on a LMS or an e-learning platform.
                }
             }
          ]
-      },
+      }
    },
    "timestamp": "2016-06-09T15:34:26.887Z"
 }

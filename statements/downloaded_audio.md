@@ -59,6 +59,6 @@ A user has downloaded a file of `audio` type from an LMS or an e-learning platfo
 ## Rules
 
 - `$.context.contextActivities.category`: INCLUDED, MUST contain an activity with the `https://w3id.org/xapi/lms` id.
-- `$.context.extensions['https://w3id.org/xapi/video/extensions/length']`: RECOMMENDED, positive float with maximum 3 decimals, MUST contain the value of the actual length of the media in seconds.
+- `$.context.extensions['https://w3id.org/xapi/audio/extensions/length']`: RECOMMENDED, positive float with maximum 3 decimals, MUST contain the value of the actual length of the media in seconds.
 - `$.context.extensions['https://w3id.org/xapi/cmi5/context/extensions/sessionid']`: RECOMMENDED, UUID, MUST contain the ID of the active session where the audio was downloaded.
 - `$.timestamp`: INCLUDED.
