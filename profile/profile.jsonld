@@ -75,10 +75,7 @@
             "rules": [
                 {
                     "location": "$.context.contextActivities.category.id",
-                    "presence": "included",
-                    "any": [
-                        "https://profiles.adlnet.gov/xapi/bf76a8cc-f46a-4065-aa7b-443df4efc2be/v/1"
-                    ]
+                    "presence": "included"
                 },
                 {
                     "location": "$.object.definition.extensions['https://w3id.org/xapi/acrossx/extensions/type']",
@@ -106,10 +103,7 @@
             "rules": [
                 {
                     "location": "$.context.contextActivities.category.id",
-                    "presence": "included",
-                    "any": [
-                        "https://profiles.adlnet.gov/xapi/bf76a8cc-f46a-4065-aa7b-443df4efc2be/v/1"
-                    ]
+                    "presence": "included"
                 },
                 {
                     "location": "$.object.definition.extensions['https://w3id.org/xapi/acrossx/extensions/type']",
@@ -131,6 +125,14 @@
             "objectActivityType": "http://adlnet.gov/expapi/activities/course",
             "rules": [
                 {
+                    "location": "$.context.contextActivities.category",
+                    "presence": "included"
+                },
+                {
+                    "location": "$.timestamp",
+                    "presence": "included"
+                },
+                {
                     "location": "$.context.extensions['http://schema.dases.eu/xapi/profile/common/extension/starting-date']",
                     "presence": "recommended"
                 },
@@ -141,10 +143,6 @@
                 {
                     "location": "$.context.extensions['http://schema.dases.eu/xapi/profile/common/extension/role']",
                     "presence": "recommended"
-                },
-                {
-                    "location": "$.timestamp",
-                    "presence": "included"
                 }
             ]
         },
@@ -162,6 +160,14 @@
             "objectActivityType": "http://adlnet.gov/expapi/activities/course",
             "rules": [
                 {
+                    "location": "$.context.contextActivities.category",
+                    "presence": "included"
+                },
+                {
+                    "location": "$.timestamp",
+                    "presence": "included"
+                },
+                {
                     "location": "$.context.extensions['http://schema.dases.eu/xapi/profile/common/extension/starting-date']",
                     "presence": "recommended"
                 },
@@ -172,10 +178,87 @@
                 {
                     "location": "$.context.extensions['http://schema.dases.eu/xapi/profile/common/extension/role']",
                     "presence": "recommended"
+                }
+            ]
+        },
+        {
+            "id": "http://schema.dases.eu/xapi/profile/common/templates/uploaded-audio",
+            "type": "StatementTemplate",
+            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "prefLabel": {
+                "en": "Uploaded an audio"
+            },
+            "definition": {
+                "en": "The actor has uploaded an audio file."
+            },
+            "verb": "https://w3id.org/xapi/netc/verbs/uploaded",
+            "objectActivityType": "https://w3id.org/xapi/video/activity-type/audio",
+            "rules": [
+                {
+                    "location": "$.context.contextActivities.category",
+                    "presence": "included"
                 },
                 {
                     "location": "$.timestamp",
                     "presence": "included"
+                },
+                {
+                    "location": "$.context.extensions['https://w3id.org/xapi/cmi5/context/extensions/sessionid']",
+                    "presence": "recommended"
+                }
+            ]
+        },
+        {
+            "id": "http://schema.dases.eu/xapi/profile/common/templates/uploaded-document",
+            "type": "StatementTemplate",
+            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "prefLabel": {
+                "en": "Uploaded a document"
+            },
+            "definition": {
+                "en": "The actor has uploaded a file of type document."
+            },
+            "verb": "https://w3id.org/xapi/netc/verbs/uploaded",
+            "objectActivityType": "http://id.tincanapi.com/activitytype/document",
+            "rules": [
+                {
+                    "location": "$.context.contextActivities.category",
+                    "presence": "included"
+                },
+                {
+                    "location": "$.timestamp",
+                    "presence": "included"
+                },
+                {
+                    "location": "$.context.extensions['https://w3id.org/xapi/cmi5/context/extensions/sessionid']",
+                    "presence": "recommended"
+                }
+            ]
+        },
+        {
+            "id": "http://schema.dases.eu/xapi/profile/common/templates/uploaded-video",
+            "type": "StatementTemplate",
+            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "prefLabel": {
+                "en": "Uploaded a video"
+            },
+            "definition": {
+                "en": "The actor has uploaded a video file."
+            },
+            "verb": "https://w3id.org/xapi/netc/verbs/uploaded",
+            "objectActivityType": "https://w3id.org/xapi/video/activity-type/video",
+            "rules": [
+                {
+                    "location": "$.context.contextActivities.category",
+                    "presence": "included"
+                },
+                {
+                    "location": "$.timestamp",
+                    "presence": "included"
+                },
+                {
+                    "location": "$.context.extensions['https://w3id.org/xapi/cmi5/context/extensions/sessionid']",
+                    "presence": "recommended"
                 }
             ]
         },
@@ -187,7 +270,7 @@
                 "en": "Uploaded a file"
             },
             "definition": {
-                "en": "The actor has uploaded a file such as a pdf, doc, txt, ppt, xls, csv, etc."
+                "en": "The actor has uploaded a file excepted for audio, document and video types."
             },
             "verb": "https://w3id.org/xapi/netc/verbs/uploaded",
             "objectActivityType": "http://activitystrea.ms/file",
@@ -199,6 +282,107 @@
                 {
                     "location": "$.timestamp",
                     "presence": "included"
+                },
+                {
+                    "location": "$.object.definition.extensions['https://w3id.org/xapi/acrossx/extensions/type']",
+                    "presence": "recommended"
+                },
+                {
+                    "location": "$.context.extensions['https://w3id.org/xapi/cmi5/context/extensions/sessionid']",
+                    "presence": "recommended"
+                }
+            ]
+        },
+        {
+            "id": "http://schema.dases.eu/xapi/profile/common/templates/downloaded-audio",
+            "type": "StatementTemplate",
+            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "prefLabel": {
+                "en": "Downloaded an audio"
+            },
+            "definition": {
+                "en": "The actor has downloaded an audio file."
+            },
+            "verb": "http://id.tincanapi.com/verb/downloaded",
+            "objectActivityType": "https://w3id.org/xapi/video/activity-type/audio",
+            "rules": [
+                {
+                    "location": "$.context.contextActivities.category",
+                    "presence": "included"
+                },
+                {
+                    "location": "$.timestamp",
+                    "presence": "included"
+                },
+                {
+                    "location": "$.context.extensions['https://w3id.org/xapi/audio/extensions/length']",
+                    "presence": "recommended"
+                },
+                {
+                    "location": "$.context.extensions['https://w3id.org/xapi/cmi5/context/extensions/sessionid']",
+                    "presence": "recommended"
+                }
+            ]
+        },
+        {
+            "id": "http://schema.dases.eu/xapi/profile/common/templates/downloaded-document",
+            "type": "StatementTemplate",
+            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "prefLabel": {
+                "en": "Downloaded a document"
+            },
+            "definition": {
+                "en": "The actor has downloaded a file of document type."
+            },
+            "verb": "http://id.tincanapi.com/verb/downloaded",
+            "objectActivityType": "http://id.tincanapi.com/activitytype/document",
+            "rules": [
+                {
+                    "location": "$.context.contextActivities.category",
+                    "presence": "included"
+                },
+                {
+                    "location": "$.timestamp",
+                    "presence": "included"
+                },
+                {
+                    "location": "$.context.extensions['https://w3id.org/xapi/cmi5/context/extensions/sessionid']",
+                    "presence": "recommended"
+                }
+            ]
+        },
+        {
+            "id": "http://schema.dases.eu/xapi/profile/common/templates/downloaded-video",
+            "type": "StatementTemplate",
+            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "prefLabel": {
+                "en": "Downloaded a video"
+            },
+            "definition": {
+                "en": "The actor has downloaded a video file."
+            },
+            "verb": "http://id.tincanapi.com/verb/downloaded",
+            "objectActivityType": "https://w3id.org/xapi/video/activity-type/video",
+            "rules": [
+                {
+                    "location": "$.context.contextActivities.category",
+                    "presence": "included"
+                },
+                {
+                    "location": "$.timestamp",
+                    "presence": "included"
+                },
+                {
+                    "location": "$.context.extensions['https://w3id.org/xapi/video/extensions/length']",
+                    "presence": "recommended"
+                },
+                {
+                    "location": "$.context.extensions['https://w3id.org/xapi/video/extensions/quality']",
+                    "presence": "recommended"
+                },
+                {
+                    "location": "$.context.extensions['https://w3id.org/xapi/cmi5/context/extensions/sessionid']",
+                    "presence": "recommended"
                 }
             ]
         },
@@ -210,7 +394,7 @@
                 "en": "Downloaded a file"
             },
             "definition": {
-                "en": "The actor has downloaded a file such as a pdf, doc, txt, ppt, xls, csv, etc."
+                "en": "The actor has downloaded a file excepted for audio, document and video types."
             },
             "verb": "http://id.tincanapi.com/verb/downloaded",
             "objectActivityType": "http://activitystrea.ms/file",
@@ -222,6 +406,14 @@
                 {
                     "location": "$.timestamp",
                     "presence": "included"
+                },
+                {
+                    "location": "$.object.definition.extensions['https://w3id.org/xapi/acrossx/extensions/type']",
+                    "presence": "recommended"
+                },
+                {
+                    "location": "$.context.extensions['https://w3id.org/xapi/cmi5/context/extensions/sessionid']",
+                    "presence": "recommended"
                 }
             ]
         }
