@@ -74,7 +74,7 @@
             "objectActivityType": "https://w3id.org/xapi/acrossx/activities/webpage",
             "rules": [
                 {
-                    "location": "$.context.contextActivities.category.id",
+                    "location": "$.context.contextActivities.category",
                     "presence": "included"
                 },
                 {
@@ -102,7 +102,7 @@
             "objectActivityType": "http://activitystrea.ms/file",
             "rules": [
                 {
-                    "location": "$.context.contextActivities.category.id",
+                    "location": "$.context.contextActivities.category",
                     "presence": "included"
                 },
                 {
@@ -284,11 +284,11 @@
                     "presence": "included"
                 },
                 {
-                    "location": "$.object.definition.extensions['https://w3id.org/xapi/acrossx/extensions/type']",
+                    "location": "$.context.extensions['https://w3id.org/xapi/cmi5/context/extensions/sessionid']",
                     "presence": "recommended"
                 },
                 {
-                    "location": "$.context.extensions['https://w3id.org/xapi/cmi5/context/extensions/sessionid']",
+                    "location": "$.object.definition.extensions['https://w3id.org/xapi/acrossx/extensions/type']",
                     "presence": "recommended"
                 }
             ]
@@ -315,11 +315,11 @@
                     "presence": "included"
                 },
                 {
-                    "location": "$.context.extensions['https://w3id.org/xapi/audio/extensions/length']",
+                    "location": "$.context.extensions['https://w3id.org/xapi/cmi5/context/extensions/sessionid']",
                     "presence": "recommended"
                 },
                 {
-                    "location": "$.context.extensions['https://w3id.org/xapi/cmi5/context/extensions/sessionid']",
+                    "location": "$.context.extensions['https://w3id.org/xapi/audio/extensions/length']",
                     "presence": "recommended"
                 }
             ]
@@ -373,15 +373,15 @@
                     "presence": "included"
                 },
                 {
+                    "location": "$.context.extensions['https://w3id.org/xapi/cmi5/context/extensions/sessionid']",
+                    "presence": "recommended"
+                },
+                {
                     "location": "$.context.extensions['https://w3id.org/xapi/video/extensions/length']",
                     "presence": "recommended"
                 },
                 {
                     "location": "$.context.extensions['https://w3id.org/xapi/video/extensions/quality']",
-                    "presence": "recommended"
-                },
-                {
-                    "location": "$.context.extensions['https://w3id.org/xapi/cmi5/context/extensions/sessionid']",
                     "presence": "recommended"
                 }
             ]
@@ -408,11 +408,11 @@
                     "presence": "included"
                 },
                 {
-                    "location": "$.object.definition.extensions['https://w3id.org/xapi/acrossx/extensions/type']",
+                    "location": "$.context.extensions['https://w3id.org/xapi/cmi5/context/extensions/sessionid']",
                     "presence": "recommended"
                 },
                 {
-                    "location": "$.context.extensions['https://w3id.org/xapi/cmi5/context/extensions/sessionid']",
+                    "location": "$.object.definition.extensions['https://w3id.org/xapi/acrossx/extensions/type']",
                     "presence": "recommended"
                 }
             ]
