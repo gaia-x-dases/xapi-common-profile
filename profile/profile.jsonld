@@ -23,6 +23,171 @@
     },
     "concepts": [
         {
+            "id": "https://w3id.org/xapi/netc/verbs/accessed",
+            "type": "Verb",
+            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "prefLabel": {
+                "en": "accessed"
+            },
+            "definition": {
+                "en": "Indicates the actor accessed or navigated to a file or page."
+            }
+        },
+        {
+            "id": "https://w3id.org/xapi/netc/verbs/downloaded",
+            "type": "Verb",
+            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "prefLabel": {
+                "en": "downloaded"
+            },
+            "definition": {
+                "en": "Indicates the actor downloaded a file."
+            }
+        },
+        {
+            "id": "http://adlnet.gov/expapi/verbs/registered",
+            "type": "Verb",
+            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "prefLabel": {
+                "en": "registered"
+            },
+            "definition": {
+                "en": "Indicates the actor registered for a course."
+            }
+        },
+        {
+            "id": "http://id.tincanapi.com/verb/unregistered",
+            "type": "Verb",
+            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "prefLabel": {
+                "en": "unregistered"
+            },
+            "definition": {
+                "en": "Indicates the actor unregistered from a course."
+            }
+        },
+        {
+            "id": "https://w3id.org/xapi/netc/verbs/uploaded",
+            "type": "Verb",
+            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "prefLabel": {
+                "en": "uploaded"
+            },
+            "definition": {
+                "en": "Indicates the actor uploaded a file."
+            }
+        },
+        {
+            "id": "http://activitystrea.ms/file",
+            "type": "ActivityType",
+            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "prefLabel": {
+                "en": "file"
+            },
+            "definition": {
+                "en": "Represents a file."
+            }
+        },
+        {
+            "id": "https://w3id.org/xapi/acrossx/activities/webpage",
+            "type": "ActivityType",
+            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "prefLabel": {
+                "en": "webpage"
+            },
+            "definition": {
+                "en": "Represents a webpage."
+            }
+        },
+        {
+            "id": "https://w3id.org/xapi/video/activity-type/audio",
+            "type": "ActivityType",
+            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "prefLabel": {
+                "en": "audio"
+            },
+            "definition": {
+                "en": "Represents an audio file."
+            }
+        },
+        {
+            "id": "http://id.tincanapi.com/activitytype/document",
+            "type": "ActivityType",
+            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "prefLabel": {
+                "en": "document"
+            },
+            "definition": {
+                "en": "Represents a document."
+            }
+        },
+        {
+            "id": "https://w3id.org/xapi/video/activity-type/video",
+            "type": "ActivityType",
+            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "prefLabel": {
+                "en": "video"
+            },
+            "definition": {
+                "en": "Represents a video file."
+            }
+        },
+        {
+            "id": "http://adlnet.gov/expapi/activities/course",
+            "type": "ActivityType",
+            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "prefLabel": {
+                "en": "course"
+            },
+            "definition": {
+                "en": "Represents a course."
+            }
+        },
+        {
+            "id": "https://w3id.org/xapi/acrossx/extensions/type",
+            "type": "ActivityExtension",
+            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "prefLabel": {
+                "en": "type"
+            },
+            "definition": {
+                "en": "Specifies the type of the file or webpage."
+            }
+        },
+        {
+            "id": "https://w3id.org/xapi/video/extensions/length",
+            "type": "ContextExtension",
+            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "prefLabel": {
+                "en": "length"
+            },
+            "definition": {
+                "en": "The length of the media in seconds."
+            }
+        },
+        {
+            "id": "https://w3id.org/xapi/video/extensions/quality",
+            "type": "ContextExtension",
+            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "prefLabel": {
+                "en": "quality"
+            },
+            "definition": {
+                "en": "The quality of the video."
+            }
+        },
+        {
+            "id": "https://w3id.org/xapi/cmi5/context/extensions/sessionid",
+            "type": "ContextExtension",
+            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "prefLabel": {
+                "en": "session ID"
+            },
+            "definition": {
+                "en": "The ID of the active session."
+            }
+        },
+        {
             "id": "http://schema.dases.eu/xapi/profile/common/extension/starting-date",
             "type": "ContextExtension",
             "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
@@ -78,6 +243,10 @@
                     "presence": "included"
                 },
                 {
+                    "location": "$.timestamp",
+                    "presence": "included"
+                },
+                {
                     "location": "$.object.definition.extensions['https://w3id.org/xapi/acrossx/extensions/type']",
                     "presence": "recommended",
                     "any": [
@@ -103,6 +272,10 @@
             "rules": [
                 {
                     "location": "$.context.contextActivities.category",
+                    "presence": "included"
+                },
+                {
+                    "location": "$.timestamp",
                     "presence": "included"
                 },
                 {
