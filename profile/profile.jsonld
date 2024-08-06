@@ -1,19 +1,19 @@
 {
-    "id": "http://schema.dases.eu/xapi/profile/common",
+    "id": "https://w3id.org/xapi/lms",
     "@context": "https://w3id.org/xapi/profiles/context",
     "type": "Profile",
     "conformsTo": "https://w3id.org/xapi/profiles#1.0",
     "prefLabel": {
-        "en": "DASES Common Profile"
+        "en": "Learning Management System"
     },
     "definition": {
-        "en": "Common profile of typical activities occurring in a LMS or educational app."
+        "en": "Profile common and generic actions that can performed on an Learning Management System (LMS) or any e-learning application."
     },
-    "seeAlso": "",
+    "seeAlso": "https://github.com/gaia-x-dases/xapi-lms",
     "versions": [
         {
-            "id": "http://schema.dases.eu/xapi/profile/common/v/1",
-            "generatedAtTime": "2022-04-14T18:58:48.297Z"
+            "id": "https://w3id.org/xapi/lms/v/1",
+            "generatedAtTime": "2023-07-11T08:04:30.652Z"
         }
     ],
     "author": {
@@ -25,7 +25,7 @@
         {
             "id": "https://w3id.org/xapi/netc/verbs/accessed",
             "type": "Verb",
-            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "inScheme": "https://w3id.org/xapi/lms/v/1",
             "prefLabel": {
                 "en": "accessed"
             },
@@ -34,9 +34,9 @@
             }
         },
         {
-            "id": "https://w3id.org/xapi/netc/verbs/downloaded",
+            "id": "http://id.tincanapi.com/verb/downloaded",
             "type": "Verb",
-            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "inScheme": "https://w3id.org/xapi/lms/v/1",
             "prefLabel": {
                 "en": "downloaded"
             },
@@ -47,7 +47,7 @@
         {
             "id": "http://adlnet.gov/expapi/verbs/registered",
             "type": "Verb",
-            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "inScheme": "https://w3id.org/xapi/lms/v/1",
             "prefLabel": {
                 "en": "registered"
             },
@@ -58,7 +58,7 @@
         {
             "id": "http://id.tincanapi.com/verb/unregistered",
             "type": "Verb",
-            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "inScheme": "https://w3id.org/xapi/lms/v/1",
             "prefLabel": {
                 "en": "unregistered"
             },
@@ -69,7 +69,7 @@
         {
             "id": "https://w3id.org/xapi/netc/verbs/uploaded",
             "type": "Verb",
-            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "inScheme": "https://w3id.org/xapi/lms/v/1",
             "prefLabel": {
                 "en": "uploaded"
             },
@@ -80,7 +80,7 @@
         {
             "id": "http://activitystrea.ms/file",
             "type": "ActivityType",
-            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "inScheme": "https://w3id.org/xapi/lms/v/1",
             "prefLabel": {
                 "en": "file"
             },
@@ -91,7 +91,7 @@
         {
             "id": "https://w3id.org/xapi/acrossx/activities/webpage",
             "type": "ActivityType",
-            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "inScheme": "https://w3id.org/xapi/lms/v/1",
             "prefLabel": {
                 "en": "webpage"
             },
@@ -100,9 +100,9 @@
             }
         },
         {
-            "id": "https://w3id.org/xapi/video/activity-type/audio",
+            "id": "https://w3id.org/xapi/audio/activity-type/audio",
             "type": "ActivityType",
-            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "inScheme": "https://w3id.org/xapi/lms/v/1",
             "prefLabel": {
                 "en": "audio"
             },
@@ -113,7 +113,7 @@
         {
             "id": "http://id.tincanapi.com/activitytype/document",
             "type": "ActivityType",
-            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "inScheme": "https://w3id.org/xapi/lms/v/1",
             "prefLabel": {
                 "en": "document"
             },
@@ -124,7 +124,7 @@
         {
             "id": "https://w3id.org/xapi/video/activity-type/video",
             "type": "ActivityType",
-            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "inScheme": "https://w3id.org/xapi/lms/v/1",
             "prefLabel": {
                 "en": "video"
             },
@@ -135,7 +135,7 @@
         {
             "id": "http://adlnet.gov/expapi/activities/course",
             "type": "ActivityType",
-            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "inScheme": "https://w3id.org/xapi/lms/v/1",
             "prefLabel": {
                 "en": "course"
             },
@@ -146,7 +146,7 @@
         {
             "id": "https://w3id.org/xapi/acrossx/extensions/type",
             "type": "ActivityExtension",
-            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "inScheme": "https://w3id.org/xapi/lms/v/1",
             "prefLabel": {
                 "en": "type"
             },
@@ -157,7 +157,7 @@
         {
             "id": "https://w3id.org/xapi/video/extensions/length",
             "type": "ContextExtension",
-            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "inScheme": "https://w3id.org/xapi/lms/v/1",
             "prefLabel": {
                 "en": "length"
             },
@@ -168,7 +168,7 @@
         {
             "id": "https://w3id.org/xapi/video/extensions/quality",
             "type": "ContextExtension",
-            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "inScheme": "https://w3id.org/xapi/lms/v/1",
             "prefLabel": {
                 "en": "quality"
             },
@@ -179,7 +179,7 @@
         {
             "id": "https://w3id.org/xapi/cmi5/context/extensions/sessionid",
             "type": "ContextExtension",
-            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "inScheme": "https://w3id.org/xapi/lms/v/1",
             "prefLabel": {
                 "en": "session ID"
             },
@@ -188,52 +188,58 @@
             }
         },
         {
-            "id": "http://schema.dases.eu/xapi/profile/common/extension/starting-date",
+            "id": "https://w3id.org/xapi/lms/extensions/starting-date",
             "type": "ContextExtension",
-            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "inScheme": "https://w3id.org/xapi/lms/v/1",
             "prefLabel": {
                 "en": "starting date"
             },
             "definition": {
                 "en": "This is the starting date of the activity, formatted according to the normal format of ISO 8601."
             },
-            "inlineSchema": "{\"type\":\"string\"}\n"
+            "inlineSchema": {
+                "type": "string"
+            }
         },
         {
-            "id": "http://schema.dases.eu/xapi/profile/common/extension/ending-date",
+            "id": "https://w3id.org/xapi/lms/extensions/ending-date",
             "type": "ContextExtension",
-            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "inScheme": "https://w3id.org/xapi/lms/v/1",
             "prefLabel": {
                 "en": "ending date"
             },
             "definition": {
-                "en": "This is the ending date of the activity, formatted according to the normal format of ISO 8601.\n"
+                "en": "This is the ending date of the activity, formatted according to the normal format of ISO 8601. "
             },
-            "inlineSchema": "{\"type\": \"string\"}"
+            "inlineSchema": {
+                "type": "string"
+            }
         },
         {
-            "id": "http://schema.dases.eu/xapi/profile/common/extension/role",
+            "id": "https://w3id.org/xapi/lms/extensions/role",
             "type": "ContextExtension",
-            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "inScheme": "https://w3id.org/xapi/lms/v/1",
             "prefLabel": {
                 "en": "role"
             },
             "definition": {
                 "en": "This is the role of the actor. For example (but not limited to): admin, manager, teacher, guest, learner or staff."
             },
-            "inlineSchema": "{\"type\": \"string\"}"
+            "inlineSchema": {
+                "type": "string"
+            }
         }
     ],
     "templates": [
         {
-            "id": "http://schema.dases.eu/xapi/profile/common/templates/accessed-page",
+            "id": "https://w3id.org/xapi/lms/templates/accessed-page",
             "type": "StatementTemplate",
-            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "inScheme": "https://w3id.org/xapi/lms/v/1",
             "prefLabel": {
                 "en": "Accessed a page"
             },
             "definition": {
-                "en": "The actor has accessed a page of a LMS or a website."
+                "en": "A user has accessed or navigated a page on a LMS or an e-learning platform.\n"
             },
             "verb": "https://w3id.org/xapi/netc/verbs/accessed",
             "objectActivityType": "https://w3id.org/xapi/acrossx/activities/webpage",
@@ -258,14 +264,14 @@
             ]
         },
         {
-            "id": "http://schema.dases.eu/xapi/profile/common/templates/accessed-file",
+            "id": "https://w3id.org/xapi/lms/templates/accessed-file",
             "type": "StatementTemplate",
-            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "inScheme": "https://w3id.org/xapi/lms/v/1",
             "prefLabel": {
                 "en": "Accessed a file"
             },
             "definition": {
-                "en": "The actor has accessed a file such as a pdf, doc, txt, ppt, xls, csv, etc."
+                "en": "A user has accessed or navigated a file on a LMS or an e-learning platform.\n"
             },
             "verb": "https://w3id.org/xapi/netc/verbs/accessed",
             "objectActivityType": "http://activitystrea.ms/file",
@@ -285,16 +291,16 @@
             ]
         },
         {
-            "id": "http://schema.dases.eu/xapi/profile/common/templates/registered-course",
+            "id": "https://w3id.org/xapi/lms/templates/registered-course",
             "type": "StatementTemplate",
-            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "inScheme": "https://w3id.org/xapi/lms/v/1",
             "prefLabel": {
                 "en": "Registered to a course"
             },
             "definition": {
-                "en": "The actor is registered to a course."
+                "en": "A user is registered to a course, whether it is self-registration or cohort-registration (a course instructor has registered the user).\n"
             },
-            "verb": "https://w3id.org/xapi/tla/verbs/registered",
+            "verb": "http://adlnet.gov/expapi/verbs/registered",
             "objectActivityType": "http://adlnet.gov/expapi/activities/course",
             "rules": [
                 {
@@ -306,28 +312,28 @@
                     "presence": "included"
                 },
                 {
-                    "location": "$.context.extensions['http://schema.dases.eu/xapi/profile/common/extension/starting-date']",
+                    "location": "$.context.extensions['https://w3id.org/xapi/lms/extensions/starting-date']",
                     "presence": "recommended"
                 },
                 {
-                    "location": "$.context.extensions['http://schema.dases.eu/xapi/profile/common/extension/ending-date']",
+                    "location": "$.context.extensions['https://w3id.org/xapi/lms/extensions/ending-date']",
                     "presence": "recommended"
                 },
                 {
-                    "location": "$.context.extensions['http://schema.dases.eu/xapi/profile/common/extension/role']",
+                    "location": "$.context.extensions['https://w3id.org/xapi/lms/extensions/role']",
                     "presence": "recommended"
                 }
             ]
         },
         {
-            "id": "http://schema.dases.eu/xapi/profile/common/templates/unregistered-course",
+            "id": "https://w3id.org/xapi/lms/templates/unregistered-course",
             "type": "StatementTemplate",
-            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "inScheme": "https://w3id.org/xapi/lms/v/1",
             "prefLabel": {
                 "en": "Unregistered to a course"
             },
             "definition": {
-                "en": "The actor is unregistered to a course."
+                "en": "A user is registered to a course, whether it is self-registration or cohort-registration (a course instructor has registered the user).\n"
             },
             "verb": "http://id.tincanapi.com/verb/unregistered",
             "objectActivityType": "http://adlnet.gov/expapi/activities/course",
@@ -341,31 +347,31 @@
                     "presence": "included"
                 },
                 {
-                    "location": "$.context.extensions['http://schema.dases.eu/xapi/profile/common/extension/starting-date']",
+                    "location": "$.context.extensions['https://w3id.org/xapi/lms/extensions/starting-date']",
                     "presence": "recommended"
                 },
                 {
-                    "location": "$.context.extensions['http://schema.dases.eu/xapi/profile/common/extension/ending-date']",
+                    "location": "$.context.extensions['https://w3id.org/xapi/lms/extensions/ending-date']",
                     "presence": "recommended"
                 },
                 {
-                    "location": "$.context.extensions['http://schema.dases.eu/xapi/profile/common/extension/role']",
+                    "location": "$.context.extensions['https://w3id.org/xapi/lms/extensions/role']",
                     "presence": "recommended"
                 }
             ]
         },
         {
-            "id": "http://schema.dases.eu/xapi/profile/common/templates/uploaded-audio",
+            "id": "https://w3id.org/xapi/lms/templates/uploaded-audio",
             "type": "StatementTemplate",
-            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "inScheme": "https://w3id.org/xapi/lms/v/1",
             "prefLabel": {
                 "en": "Uploaded an audio"
             },
             "definition": {
-                "en": "The actor has uploaded an audio file."
+                "en": "A user has uploaded a file of \"audio\" type to an LMS or an e-learning platform.\nAs this template is related to \"audio\" activity, it is inspired from templates of \"Audio\" Profile.\n"
             },
             "verb": "https://w3id.org/xapi/netc/verbs/uploaded",
-            "objectActivityType": "https://w3id.org/xapi/video/activity-type/audio",
+            "objectActivityType": "https://w3id.org/xapi/audio/activity-type/audio",
             "rules": [
                 {
                     "location": "$.context.contextActivities.category",
@@ -382,14 +388,14 @@
             ]
         },
         {
-            "id": "http://schema.dases.eu/xapi/profile/common/templates/uploaded-document",
+            "id": "https://w3id.org/xapi/lms/templates/uploaded-document",
             "type": "StatementTemplate",
-            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "inScheme": "https://w3id.org/xapi/lms/v/1",
             "prefLabel": {
                 "en": "Uploaded a document"
             },
             "definition": {
-                "en": "The actor has uploaded a file of type document."
+                "en": "A user has uploaded a file of \"document\" type to an LMS or an e-learning platform.\n"
             },
             "verb": "https://w3id.org/xapi/netc/verbs/uploaded",
             "objectActivityType": "http://id.tincanapi.com/activitytype/document",
@@ -409,14 +415,14 @@
             ]
         },
         {
-            "id": "http://schema.dases.eu/xapi/profile/common/templates/uploaded-video",
+            "id": "https://w3id.org/xapi/lms/templates/uploaded-video",
             "type": "StatementTemplate",
-            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "inScheme": "https://w3id.org/xapi/lms/v/1",
             "prefLabel": {
                 "en": "Uploaded a video"
             },
             "definition": {
-                "en": "The actor has uploaded a video file."
+                "en": "A user has uploaded a file of \"video\" type to an LMS or an e-learning platform.\nAs this template is related to \"video\" activity, it is inspired from templates of \"Video\" profile."
             },
             "verb": "https://w3id.org/xapi/netc/verbs/uploaded",
             "objectActivityType": "https://w3id.org/xapi/video/activity-type/video",
@@ -436,14 +442,14 @@
             ]
         },
         {
-            "id": "http://schema.dases.eu/xapi/profile/common/templates/uploaded-file",
+            "id": "https://w3id.org/xapi/lms/templates/uploaded-file",
             "type": "StatementTemplate",
-            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "inScheme": "https://w3id.org/xapi/lms/v/1",
             "prefLabel": {
                 "en": "Uploaded a file"
             },
             "definition": {
-                "en": "The actor has uploaded a file excepted for audio, document and video types."
+                "en": "A user has uploaded a file to an LMS or an e-learning platform EXCEPTED \"video\", \"audio\" or \"document\" files. \nFor these types of file, the corresponding statements templates should be used (see statement templates for \"uploaded a video\", \"uploaded an audio\" or \"uploaded a document\")."
             },
             "verb": "https://w3id.org/xapi/netc/verbs/uploaded",
             "objectActivityType": "http://activitystrea.ms/file",
@@ -467,17 +473,17 @@
             ]
         },
         {
-            "id": "http://schema.dases.eu/xapi/profile/common/templates/downloaded-audio",
+            "id": "https://w3id.org/xapi/lms/templates/downloaded-audio",
             "type": "StatementTemplate",
-            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "inScheme": "https://w3id.org/xapi/lms/v/1",
             "prefLabel": {
                 "en": "Downloaded an audio"
             },
             "definition": {
-                "en": "The actor has downloaded an audio file."
+                "en": "A user has downloaded a file of \"audio\" type from an LMS or an e-learning platform.\nAs this template is related to \"audio\" activity, it is inspired from templates of \"Audio\" profile."
             },
             "verb": "http://id.tincanapi.com/verb/downloaded",
-            "objectActivityType": "https://w3id.org/xapi/video/activity-type/audio",
+            "objectActivityType": "https://w3id.org/xapi/audio/activity-type/audio",
             "rules": [
                 {
                     "location": "$.context.contextActivities.category",
@@ -492,20 +498,20 @@
                     "presence": "recommended"
                 },
                 {
-                    "location": "$.context.extensions['https://w3id.org/xapi/audio/extensions/length']",
+                    "location": "$.context.extensions['https://w3id.org/xapi/video/extensions/length']",
                     "presence": "recommended"
                 }
             ]
         },
         {
-            "id": "http://schema.dases.eu/xapi/profile/common/templates/downloaded-document",
+            "id": "https://w3id.org/xapi/lms/templates/downloaded-document",
             "type": "StatementTemplate",
-            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "inScheme": "https://w3id.org/xapi/lms/v/1",
             "prefLabel": {
                 "en": "Downloaded a document"
             },
             "definition": {
-                "en": "The actor has downloaded a file of document type."
+                "en": "A user has downloaded a file of  \"document\" type from an LMS or an e-learning platform."
             },
             "verb": "http://id.tincanapi.com/verb/downloaded",
             "objectActivityType": "http://id.tincanapi.com/activitytype/document",
@@ -525,14 +531,14 @@
             ]
         },
         {
-            "id": "http://schema.dases.eu/xapi/profile/common/templates/downloaded-video",
+            "id": "https://w3id.org/xapi/lms/templates/downloaded-video",
             "type": "StatementTemplate",
-            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "inScheme": "https://w3id.org/xapi/lms/v/1",
             "prefLabel": {
                 "en": "Downloaded a video"
             },
             "definition": {
-                "en": "The actor has downloaded a video file."
+                "en": "A user has downloaded a file of \"video\" type from an LMS or an e-learning platform.\nAs this template is related to \"video\" activity, it is inspired from templates of Video Profile."
             },
             "verb": "http://id.tincanapi.com/verb/downloaded",
             "objectActivityType": "https://w3id.org/xapi/video/activity-type/video",
@@ -560,14 +566,14 @@
             ]
         },
         {
-            "id": "http://schema.dases.eu/xapi/profile/common/templates/downloaded-file",
+            "id": "https://w3id.org/xapi/lms/templates/downloaded-file",
             "type": "StatementTemplate",
-            "inScheme": "http://schema.dases.eu/xapi/profile/common/v/1",
+            "inScheme": "https://w3id.org/xapi/lms/v/1",
             "prefLabel": {
                 "en": "Downloaded a file"
             },
             "definition": {
-                "en": "The actor has downloaded a file excepted for audio, document and video types."
+                "en": "A user has downloaded a file from an LMS or an e-learning platform EXCEPTED \"video\", \"audio\" or \"document\" files. \nFor these types of file, the corresponding statements templates should be used (see statements template for \"downloaded a video\", \"downloaded an audio\" or \"downloaded a document\").\n"
             },
             "verb": "http://id.tincanapi.com/verb/downloaded",
             "objectActivityType": "http://activitystrea.ms/file",
